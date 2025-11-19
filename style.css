@@ -12,15 +12,15 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-image: linear-gradient(180deg, rgb(77, 100, 150) 0%, rgb(22, 22, 169) 100% ); */
+    background-color: black;
     box-shadow: 0 0 1rem black;
 }
 
 .portfolio{
     margin: auto 6rem;
     font-weight: bold;
-    color: #cb0202;
-    text-shadow: 0 0 10px rgba(183, 10, 10, 0.7);
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
     font-size: 1.5rem;
 }
 
@@ -39,30 +39,39 @@ body{
 }
 
 .container_nav a:hover{
-    width: 100%;
-    color: #ff0000;
-    text-shadow: 0 0 10px rgba(183, 10, 10, 0.7);
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
     font-weight: bold;
+    
 }
 
-/* .container_nav a {
-    position: relative;
-    padding-bottom: 3px;
-} */
-
-/* .container_nav a::after {
+.container_nav a::before {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px;
-    background: #00a3ff;
+    height: 1.5px;
+    background: #ffffff;
     transform: scaleX(0);
     transition: 0.3s ease;
     transform-origin: left;
 }
 
+.container_nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: 0.3s ease;
+    transform-origin: right;
+}
+
+.container_nav a:hover::before,
 .container_nav a:hover::after {
     transform: scaleX(1);
-} */
+}
