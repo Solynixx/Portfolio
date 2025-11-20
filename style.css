@@ -92,12 +92,11 @@ main .profile{
     background-repeat: no-repeat;
     background-position: 0 -5rem;
     background-size: cover;
-    transition: 2s ease;
+    transition: 1s ease;
     box-shadow: 0 0 2rem black;
 }
 
 main .profile:hover {
-    transform: translateY(1);
-    box-shadow: 0 0 2rem rgb(255, 0, 0);
-    transform: rotate(360deg);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0 10rem rgb(111, 1, 1);
 }
