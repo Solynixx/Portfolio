@@ -3,7 +3,7 @@ body{
     margin: 0;
     font-family: poppins;
     font-size: 1rem;
-    height: 100vh;
+    /* height: 100%; */
     background: linear-gradient( 180deg, #ffffff 0%, #7a7979 100%);
     text-align: center;
 }
@@ -14,8 +14,9 @@ body{
     flex-direction: row;
     justify-content: space-between;
     background-color: black;
-    box-shadow: 0 0 1rem black;
+    box-shadow: 0rem 1rem 1rem black;
     width: 100%;
+    position: sticky;
 }
 
 .portfolio{
@@ -86,9 +87,9 @@ main h1{
 main .profile{
     height: 20rem;
     width: 20rem;
-    margin: 50px auto;
+    margin: 30px auto;
     border-radius: 50%;
-    background-image: url('/assets/Profil.jpeg');
+    background-image: url('/assets/Profile/Profil.jpeg');
     background-repeat: no-repeat;
     background-position: 0 -5rem;
     background-size: cover;
@@ -98,5 +99,26 @@ main .profile{
 
 main .profile:hover {
     transform: translateY(-0.5rem);
-    box-shadow: 0 0 10rem rgb(111, 1, 1);
+    box-shadow: 0 0 5rem rgb(111, 1, 1);
+}
+
+main .descript{
+    margin: auto 33rem;
+    width: 30rem;
+    
+}
+
+main .logo_social img{
+    width: 2rem;
+}
+
+main .my_social{
+    margin-top: 2rem;
+}
+
+main .logo_social{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
