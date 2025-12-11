@@ -84,6 +84,30 @@ main h1{
     padding: 0;
 }
 
+.container{
+    display: inline-block; /* make the cursor at the end len text */
+}
+
+.text{
+    font-size: 1rem;
+    font-weight: bold;   
+    border-right: 3px solid;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50% { border-color: transparent}
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to { width: 100%;}
+}
+
 main .profile{
     height: 20rem;
     width: 20rem;
