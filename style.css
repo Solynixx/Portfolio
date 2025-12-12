@@ -17,6 +17,7 @@ body{
     box-shadow: 0rem 1rem 1rem black;
     width: 100%;
     position: sticky;
+    top: 0;
 }
 
 .portfolio{
@@ -84,6 +85,24 @@ main h1{
     padding: 0;
 }
 
+.text_typing{
+    display: inline-block; /* make the cursor at the end len text */
+}
+
+.typing{
+    font-size: 1rem;
+    font-weight: bold;   
+    border-right: 3px solid;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: cursorBlink .6s infinite;
+}
+
+@keyframes cursorBlink{
+    50% {border-color: transparent;}
+}
+
 main .profile{
     height: 20rem;
     width: 20rem;
@@ -105,7 +124,6 @@ main .profile:hover {
 main .descript{
     margin: auto 33rem;
     width: 30rem;
-    
 }
 
 main .logo_social img{
