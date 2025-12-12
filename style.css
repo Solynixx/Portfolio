@@ -84,28 +84,22 @@ main h1{
     padding: 0;
 }
 
-.container{
+.text_typing{
     display: inline-block; /* make the cursor at the end len text */
 }
 
-.text{
+.typing{
     font-size: 1rem;
     font-weight: bold;   
     border-right: 3px solid;
     letter-spacing: 2px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(18),
-    cursor .4s step-end infinite alternate;
+    animation: cursorBlink .6s infinite;
 }
 
-@keyframes cursor{
-    50% { border-color: transparent}
-}
-
-@keyframes typing {
-    from {width: 0;}
-    to { width: 100%;}
+@keyframes cursorBlink{
+    50% {border-color: transparent;}
 }
 
 main .profile{
@@ -129,7 +123,6 @@ main .profile:hover {
 main .descript{
     margin: auto 33rem;
     width: 30rem;
-    
 }
 
 main .logo_social img{
