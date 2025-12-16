@@ -1,7 +1,7 @@
 const texts = [
-    "Junior Front-End Developer",
+    "Junior Front-End Developer.",
     "Building clean & simple interface.",
-    "Learning by building real projects"
+    "Learning by building real projects."
 ];
 
 let index = 0; //Select index from const text 
@@ -18,7 +18,7 @@ function type() {
         document.getElementById("typing").textContent = current.slice(0, charIndex);
 
         if (charIndex === current.length) {
-            setTimeout( () => deleting = true, 900)    
+            setTimeout( () => deleting = true, 250)    
         }; // pause before deleting
     } 
     else {
