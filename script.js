@@ -1,6 +1,7 @@
 const texts = [
-    "My name is Edbert Chandra.",
-    "I am a junior front-end developer.",
+    "Junior Front-End Developer",
+    "Building clean & simple interface.",
+    "Learning by building real projects"
 ];
 
 let index = 0; //Select index from const text 
@@ -30,7 +31,6 @@ function type() {
             index = (index + 1) % texts.length; // move to the next article
         }
     }
-
     setTimeout(type, speed);
 }
 type();
