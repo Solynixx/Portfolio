@@ -108,13 +108,13 @@ main h1{
 }
 
 main .profile{
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     margin: 30px auto;
     border-radius: 50%;
     background-image: url('/assets/Profile/Profil.jpeg');
     background-repeat: no-repeat;
-    background-position: 0 -5rem;
+    background-position: 0 -3rem;
     background-size: cover;
     transition: 1s ease;
     box-shadow: 0 0 2rem black;
@@ -122,7 +122,7 @@ main .profile{
 
 main .profile:hover {
     transform: translateY(-0.5rem);
-    box-shadow: 0 0 5rem rgb(111, 1, 1);
+    box-shadow: 0 0 5rem rgb(0, 0, 0);
 }
 
 main .descript{
@@ -131,7 +131,7 @@ main .descript{
 }
 
 main .logo_social img{
-    width: 2.5rem;
+    width: 3rem;
     transition: 0.4s ease;
 }
 
@@ -154,19 +154,25 @@ main .logo_social a::after{
     transform-origin: center;
 }
 
-main .logo_social a:hover::before,
 main .logo_social a:hover::after{
     transform: scaleX(1);
 }
 
 main .my_social{
-    margin-top: 2rem;
+    margin: 2.5rem 0;
+    font-size: 1.5rem;    
+    
+}
+
+.my_social .social_text{
+    border-bottom: 2px solid;
+    padding-bottom: 0.5rem;
 }
 
 main .logo_social{
     display: flex;
     justify-content: center;
-    gap: 1rem; 
+    gap: 1.5rem; 
 }
 
 main .logo_social img:hover{
@@ -182,13 +188,12 @@ main .download {
     background-color: black ;
     font-size: 1rem;
     border-radius: 5rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
     border: 2px solid black;
     color: white;
     vertical-align: center;
     cursor: pointer;
     transition: transform 0.5s ease;
-    margin-bottom: -1rem;
 }
 
 main .download:hover{
@@ -201,8 +206,11 @@ main .download:hover{
     font-size: large;
 }
 
+main .about {
+    margin-top: 2rem;
+}
 
-/* main .description{
+main .description{
     width: 500px;
     margin: 0 auto;
-} */
+}
