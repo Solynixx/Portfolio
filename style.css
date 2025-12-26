@@ -208,16 +208,12 @@ main .download:hover{
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 3rem;
-    border-bottom: 6px solid black;
     display: inline-block;
-    border-bottom-color: color-mix(in srgb, #ffffff 50%, #7a7979 50%);
 }
 
 
 .about_me {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
 }
 
 .description{
@@ -228,8 +224,40 @@ main .download:hover{
     box-shadow: 0 0 3rem black;
     background-color: #939393;
     width: 30rem;
+    text-align: left;
 }
 
+.head_skills_and_technologies{
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+.skills_and_technologies{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 0.5rem;
+}
+
+.skills_and_technologies .Skills,
+.Tools,
+.Design{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.3rem 0.8rem;
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.skills_and_technologies 
+.Skills:hover,
+.Tools:hover,
+.Design:hover{
+    transform: scale(1.05);
+    font-weight: bold;
+}
 
 .about_js {
     margin: 40px auto;
@@ -282,3 +310,4 @@ main .download:hover{
     height: fit-content;
     padding: 0.5rem;
 }
+
