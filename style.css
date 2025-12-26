@@ -225,6 +225,7 @@ main .description{
     margin: 0 auto;
     box-shadow: 0 0 3rem black;
     overflow: hidden;
+    background-color: #939393;
 }
 
 .about_me {
@@ -239,4 +240,19 @@ main .description{
     box-shadow: 0 0 2rem black;
     padding: 1rem 2rem;
     border-radius: 1.5rem;
+    background-color: #939393;
+}
+
+.container_services{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.container_services .service{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container_services_2{
+    display: grid;
 }
