@@ -218,20 +218,21 @@ main .download:hover{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    height: 10rem;
 }
 
 .description{
     padding: 1rem;
     border-radius: 2rem;
     border: none;
-    margin: 0 auto;
+    margin: auto;
     box-shadow: 0 0 3rem black;
-    overflow: hidden;
     background-color: #939393;
+    width: 30rem;
 }
 
+
 .about_js {
+    margin: 40px auto;
     text-align: left;
     width: fit-content;
     height:fit-content;
