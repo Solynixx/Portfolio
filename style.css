@@ -255,6 +255,19 @@ main .description{
     gap: 2rem;
 }
 
-.container_services_Front-end img{
+.Icon_Front_end{
     width: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.container_Front-end-Development p{
+    margin: 0.5rem auto;
+}
+
+.container_Front-end-Development{
+    border-radius: 2.5rem;
+    box-shadow: 0 0 0.5rem black;
+    width: fit-content;
+    height: fit-content;
 }
