@@ -17,6 +17,7 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .portfolio{
@@ -256,19 +257,22 @@ main .description{
 }
 
 .Icon_Front_end,
-.Icon_Responsive_Design{
+.Icon_Responsive_Design,
+.Icon_Performance_Optimization{
     width: 3rem;
     padding: 0;
     margin: 0;
 }
 
 .container_Front-end-Development p,
-.container_Responsive_Design p{
+.container_Responsive_Design p,
+.container_Performance_Optimization p{
     margin: 0.5rem auto;
 }
 
 .container_Front-end-Development,
-.container_Responsive_Design{
+.container_Responsive_Design,
+.container_Performance_Optimization{
     border-radius: 2.5rem;
     box-shadow: 0 0 0.5rem black;
     width: fit-content;
