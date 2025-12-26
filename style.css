@@ -164,11 +164,6 @@ main .my_social{
     font-weight: bold;
 }
 
-/* .my_social .social_text{
-    border-bottom: 2.5px solid;
-    padding-bottom: 0.5rem;
-} */
-
 main .logo_social{
     display: flex;
     justify-content: center;
@@ -245,7 +240,7 @@ main .description{
 
 .container_services{
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 10rem;
 }
 
 .container_services .service{
@@ -255,4 +250,11 @@ main .description{
 
 .container_services_2{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container_services_Front-end img{
+    width: 3rem;
 }
