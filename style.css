@@ -203,7 +203,7 @@ main .download:hover{
     font-size: large;
 }
 
-main .about {
+.about {
     margin-top: 10rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -213,20 +213,22 @@ main .about {
     border-bottom-color: color-mix(in srgb, #ffffff 50%, #7a7979 50%);
 }
 
-main .description{
+
+.about_me {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 10rem;
+}
+
+.description{
     padding: 1rem;
-    width: 50%;
     border-radius: 2rem;
     border: none;
     margin: 0 auto;
     box-shadow: 0 0 3rem black;
     overflow: hidden;
     background-color: #939393;
-}
-
-.about_me {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .about_js {
@@ -241,7 +243,7 @@ main .description{
 
 .container_services{
     display: inline-block;
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 
 .container_services .service{
@@ -253,7 +255,7 @@ main .description{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .Icon_Front_end,
