@@ -404,7 +404,6 @@ main .download:hover{
     margin: 0.5rem;
     border-radius: 0.5rem;
     border: 1px grey;
-    box-sizing: border-box;
     background-color: rgb(206, 206, 206);
     font-weight: bold;
 }
