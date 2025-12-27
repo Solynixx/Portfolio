@@ -311,3 +311,54 @@ main .download:hover{
     padding: 0.5rem;
 }
 
+.container_Contact{
+    width: auto 50%;
+    display: flex;
+    padding: 0 1.5rem;
+}
+
+.description_contact{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.container_Desc{
+    width: 50%;
+
+    text-align: left;
+}
+
+.container_input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
+
+.container_input .name,
+.container_input .email,
+.container_input .subject{
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px grey;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.container_input .message{
+    padding: 1rem 0.5rem 10rem 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px grey;
+    box-sizing: border-box;
+}
+
+.container_input button{
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    border: 1px grey;
+}
+
