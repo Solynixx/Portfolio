@@ -346,6 +346,11 @@ main .download:hover{
     border-radius: 0.5rem;
     box-sizing: border-box;
 }
+.description_contact .send_gmail.com,
+.description_contact .number_phone {
+    width: 3rem;
+}
+
 
 .container_input .message{
     padding: 1rem 0.5rem 10rem 0.5rem;
