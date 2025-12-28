@@ -130,31 +130,72 @@ main .descript{
     width: 30rem;
 }
 
-main .logo_social img,
-.logo_social_desc img{
+.logo_social .Instagram,
+.logo_social .LinkedIn,
+.logo_social .Github,
+.logo_social .Whatsapp{
     width: 3rem;
-    transition: 0.4s ease;
+    height: 3rem;
+    border-radius: 50%;
 }
 
-main .logo_social a{
+.logo_social .Instagram{
+    background-image: url(/assets/Social_logo/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s ease;
     position: relative;
 }
 
-main .logo_social a::after{
+.logo_social .LinkedIn{
+    background-image: url(/assets/Social_logo/linkedin.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.logo_social .Github{
+    background-image: url(/assets/Social_logo/Github.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.logo_social .Whatsapp{
+    background-image: url(/assets/Social_logo/Whatsapp.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.Instagram:hover, .Github:hover, .LinkedIn:hover, .Whatsapp:hover{
+    transform: translateY(-5px);
+}
+
+.Instagram::after,
+.LinkedIn::after,
+.Github::after,
+.Whatsapp::after{
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
-    bottom: 0;
+    bottom: -10px;
     height: 0.1rem;
-    box-shadow: 0 0.5rem 1.3rem white;
-    background: #ffffff;
+    box-shadow: 0 0.5rem 1.3rem rgb(9, 9, 9);
+    background: #000000;
     transform: scaleX(0);
     transition: 0.3s ease;
     transform-origin: center;
 }
 
-main .logo_social a:hover::after{
+.Instagram:hover::after,
+.LinkedIn:hover::after,
+.Github:hover::after,
+.Whatsapp:hover::after{
     transform: scaleX(1);
 }
 
@@ -167,7 +208,7 @@ main .my_social{
 main .logo_social{
     display: flex;
     justify-content: center;
-    gap: 1.5rem; 
+    gap: 1rem; 
 }
 
 main .logo_social img:hover{
@@ -360,41 +401,50 @@ main .download:hover{
 
 .logo_social_desc{
     display: flex;
-    gap: 0.3rem;
+    gap: 1rem;
 }
 
-.logo_social_desc img{
+.logo_social_desc .Instagram,
+.logo_social_desc .LinkedIn,
+.logo_social_desc .Github,
+.logo_social_desc .Whatsapp{
     width: 2rem;
+    height: 2rem;
     border-radius: 50%;
-    transition: 0.4s ease;
-    padding: 0.45rem;
-    overflow: visible;
 }
 
-.logo_social_desc a{
+.logo_social_desc .Instagram{
+    background-image: url(/assets/Social_logo/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s ease;
     position: relative;
 }
 
-.logo_social_desc a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-    height: 0.1rem;
-    box-shadow: 0 0.5rem 1.3rem white;
-    background: #ffffff;
-    transform: scaleX(0);
-    transition: 0.3s ease;
-}
- 
-.logo_social_desc a:hover::after{
-    transform: scaleX(1);
+.logo_social_desc .LinkedIn{
+    background-image: url(/assets/Social_logo/linkedin.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: 0.4s ease;
+    position: relative;
 }
 
-.logo_social_desc img:hover{
-    transform: scale(1.05);
+.logo_social_desc .Github{
+    background-image: url(/assets/Social_logo/Github.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: 0.4s ease;
+    position: relative;
 }
+
+.logo_social_desc .Whatsapp{
+    background-image: url(/assets/Social_logo/Whatsapp.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: 0.4s ease;
+    position: relative;
+}
+
 
 .container_input .message{
     padding: 1rem 0.5rem 10rem 1rem;
@@ -425,9 +475,6 @@ main .download:hover{
     background-color: rgb(165, 165, 165);
 }
 
-
-
 .container_footer img {
     width: 1rem;
 }
-
