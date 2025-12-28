@@ -172,7 +172,7 @@ main .descript{
 }
 
 .Instagram:hover, .Github:hover, .LinkedIn:hover, .Whatsapp:hover{
-    transform: translateY(-5px)
+    transform: translateY(-5px);
 }
 
 .Instagram::after,
@@ -182,8 +182,7 @@ main .descript{
     content: "";
     position: absolute;
     left: 0;
-    width: 100%;
-    display: inline;
+    width: 0;
     bottom: -10px;
     height: 0.1rem;
     box-shadow: 0 0.5rem 1.3rem rgb(9, 9, 9);
@@ -198,6 +197,7 @@ main .descript{
 .Github:hover::after,
 .Whatsapp:hover::after{
     transform: scaleX(1);
+    width: 100%;
 }
 
 main .my_social{
