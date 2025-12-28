@@ -4,7 +4,6 @@ body{
     font-family: poppins;
     font-size: 1rem;
     height: 100%;
-    background: linear-gradient( 180deg, #ffffff 0%, #7a7979 100%);
     text-align: center;
 }
 
@@ -222,7 +221,7 @@ main .download:hover{
     border: none;
     margin: auto;
     box-shadow: 0 0 3rem black;
-    background-color: #939393;
+    background-color: #cdcdcd;
     width: 30rem;
     text-align: left;
 }
@@ -267,7 +266,7 @@ main .download:hover{
     box-shadow: 0 0 2rem black;
     padding: 1rem 2rem;
     border-radius: 1.5rem;
-    background-color: #939393;
+    background-color: #cdcdcd;
 }
 
 .container_services{
@@ -354,20 +353,18 @@ main .download:hover{
     box-sizing: border-box;
     background-color: rgb(206, 206, 206);
 }
-.container_Desc .send_gmail,
+.container_Desc .email,
 .container_Desc .number_phone {
     width: 1rem;
 }
 
 .logo_social_desc{
     display: flex;
-    gap: 1.5rem;
-
+    gap: 0.3rem;
 }
 
 .logo_social_desc img{
     width: 2rem;
-    border: 3px solid black;
     border-radius: 50%;
     transition: 0.4s ease;
     padding: 0.45rem;
@@ -412,8 +409,25 @@ main .download:hover{
     padding: 0.8rem;
     border-radius: 0.5rem;
     margin: 0.5rem;
+    background-color: rgb(172, 172, 172);
     border: 1px grey;
     font-size: 1rem;
     font-weight: bold;
+    box-shadow: 0 0 0.7rem grey;
+    cursor: pointer;
+}
+
+.container_footer{
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border: none;
+    background-color: rgb(165, 165, 165);
+}
+
+
+
+.container_footer img {
+    width: 1rem;
 }
 
