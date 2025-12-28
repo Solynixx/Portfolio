@@ -34,3 +34,6 @@ function type() {
     setTimeout(type, speed);
 }
 type();
+
+
+document.getElementById("year").textContent = new Date().getFullYear();
