@@ -131,55 +131,40 @@ main .descript{
     width: 30rem;
 }
 
-.logo_social .Instagram,
-.logo_social .LinkedIn,
-.logo_social .Github,
-.logo_social .Whatsapp{
+.logo_social .Instagram, 
+.logo_social .LinkedIn, 
+.logo_social .Github, 
+.logo_social .Whatsapp {
     width: 3rem;
     height: 3rem;
+    position: relative;
+    background-image: none; 
+    display: inline-block;
+}
+
+.icon-circle {
+    display: block;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-}
-
-.logo_social .Instagram{
-    background-image: url(/assets/Social_logo/instagram.png);
-    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
     background-size: cover;
-    transition: 0.4s ease;
-    position: relative;
-}
-
-.logo_social .LinkedIn{
-    background-image: url(/assets/Social_logo/linkedin.png);
     background-repeat: no-repeat;
-    background-size:cover;
-    transition: 0.4s ease;
-    position: relative;
 }
 
-.logo_social .Github{
-    background-image: url(/assets/Social_logo/Github.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    transition: 0.4s ease;
-    position: relative;
-}
+.Instagram .icon-circle { background-image: url(/assets/Social_logo/instagram.png); }
+.LinkedIn .icon-circle  { background-image: url(/assets/Social_logo/linkedin.png); }
+.Github .icon-circle    { background-image: url(/assets/Social_logo/Github.png); }
+.Whatsapp .icon-circle  { background-image: url(/assets/Social_logo/Whatsapp.png); }
 
-.logo_social .Whatsapp{
-    background-image: url(/assets/Social_logo/Whatsapp.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    transition: 0.4s ease;
-    position: relative;
-}
-
-.Instagram:hover, .Github:hover, .LinkedIn:hover, .Whatsapp:hover{
+.Instagram:hover .icon-circle, 
+.LinkedIn:hover .icon-circle, 
+.Github:hover .icon-circle, 
+.Whatsapp:hover .icon-circle {
     transform: translateY(-5px);
 }
 
-.Instagram::after,
-.LinkedIn::after,
-.Github::after,
-.Whatsapp::after{
+.Instagram::after, .LinkedIn::after, .Github::after, .Whatsapp::after {
     content: "";
     position: absolute;
     left: 0;
@@ -193,13 +178,9 @@ main .descript{
     transform-origin: center;
 }
 
-.Instagram:hover::after,
-.LinkedIn:hover::after,
-.Github:hover::after,
-.Whatsapp:hover::after{
-    transform: scaleX(1);
+.Instagram:hover::after, .LinkedIn:hover::after, .Github:hover::after, .Whatsapp:hover::after {
+    transform: scaleX(1); 
 }
-
 main .my_social{
     margin: 2.5rem 0 1.5rem 0;
     font-size: 1.5rem;    
