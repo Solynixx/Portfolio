@@ -382,6 +382,7 @@ main .download:hover{
     flex-direction: column;
     justify-content: center;
     padding-top: 2.5rem;
+    outline: none;
 }
 
 .container_input .name,
@@ -392,6 +393,7 @@ main .download:hover{
     margin: 0.5rem;
     border: 1px grey;
     border-radius: 0.5rem;
+    outline: none;
     box-sizing: border-box;
     background-color: rgb(206, 206, 206);
 }
@@ -453,6 +455,7 @@ main .download:hover{
     border-radius: 0.5rem;
     border: 1px grey;
     background-color: rgb(206, 206, 206);
+    outline: none;
     font-weight: bold;
 }
 
