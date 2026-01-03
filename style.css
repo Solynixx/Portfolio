@@ -8,7 +8,7 @@ body{
     background: linear-gradient(180deg, rgb(255, 255, 255), rgb(91, 91, 91));
 }
 
-.head{
+.site-header{
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -20,7 +20,7 @@ body{
     z-index: 1;
 }
 
-.portfolio{
+.brand-title{
     margin: auto 6rem;
     font-weight: bold;
     color: #ffffff;
@@ -28,27 +28,27 @@ body{
     font-size: 1.5rem;
 }
 
-.container_nav{
+.nav-list{
     list-style-type: none;
     display: flex;
     gap: 3.5rem;
     width: 35rem;
     /* border: 2px solid red; */
 }
-.container_nav a{
+.nav-list a{
     text-decoration: none;
     color: #c3c3c3;
     position: relative;
 }
 
-.container_nav a:hover{
+.nav-list a:hover{
     color: #ffffff;
     text-shadow: 0 0 40px rgb(255, 255, 255);
     font-weight: bold;
 
 }
 
-.container_nav a::before {
+.nav-list a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -61,7 +61,7 @@ body{
     transform-origin: left;
 }
 
-.container_nav a::after {
+.nav-list a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -74,8 +74,8 @@ body{
     transform-origin: right;
 }
 
-.container_nav a:hover::before,
-.container_nav a:hover::after {
+.nav-list a:hover::before,
+.nav-list a:hover::after {
     transform: scaleX(1);
 }
 
@@ -89,11 +89,11 @@ main h1{
     padding: 0;
 }
 
-.text_typing{
+.hero-typing-section{
     display: inline-block; /* make the cursor at the end len text */
 }
 
-.typing{
+.hero-typing-text{
     min-height: 1.5rem;
     font-size: 1rem;
     font-weight: bold;   
@@ -108,7 +108,7 @@ main h1{
     50% {border-color: transparent;}
 }
 
-main .profile{
+main .profile-photo{
     height: 15rem;
     width: 15rem;
     margin: 30px auto;
@@ -121,7 +121,7 @@ main .profile{
     box-shadow: 0 0 2rem black;
 }
 
-main .profile:hover {
+main .profile-photo:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0 0 5rem rgb(0, 0, 0);
 }
@@ -131,16 +131,16 @@ main .descript{
     width: 30rem;
 }
 
-.logo_social .Instagram,
-.logo_social .LinkedIn,
-.logo_social .Github,
-.logo_social .Whatsapp{
+.social-links .social-instagram,
+.social-links .social-linkedin,
+.social-links .social-github,
+.social-links .social-whatsapp{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
 }
 
-.logo_social .Instagram{
+.social-links .social-instagram{
     background-image: url(/assets/Social_logo/instagram.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,7 +148,7 @@ main .descript{
     position: relative;
 }
 
-.logo_social .LinkedIn{
+.social-links .social-linkedin{
     background-image: url(/assets/Social_logo/linkedin.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -156,7 +156,7 @@ main .descript{
     position: relative;
 }
 
-.logo_social .Github{
+.social-links .social-github{
     background-image: url(/assets/Social_logo/Github.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -164,7 +164,7 @@ main .descript{
     position: relative;
 }
 
-.logo_social .Whatsapp{
+.social-links .social-whatsapp{
     background-image: url(/assets/Social_logo/Whatsapp.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -172,14 +172,14 @@ main .descript{
     position: relative;
 }
 
-.Instagram:hover, .Github:hover, .LinkedIn:hover, .Whatsapp:hover{
+.social-instagram:hover, .social-github:hover, .social-linkedin:hover, .social-whatsapp:hover{
     transform: translateY(-5px);
 }
 
-.Instagram::after,
-.LinkedIn::after,
-.Github::after,
-.Whatsapp::after{
+.social-instagram::after,
+.social-linkedin::after,
+.social-github::after,
+.social-whatsapp::after{
     content: "";
     position: absolute;
     left: 0;
@@ -193,20 +193,20 @@ main .descript{
     transform-origin: center;
 }
 
-.Instagram:hover::after,
-.LinkedIn:hover::after,
-.Github:hover::after,
-.Whatsapp:hover::after{
+.social-instagram:hover::after,
+.social-linkedin:hover::after,
+.social-github:hover::after,
+.social-whatsapp:hover::after{
     transform: scaleX(1);
 }
 
-main .my_social{
+main .social-heading{
     margin: 2.5rem 0 1.5rem 0;
     font-size: 1.5rem;    
     font-weight: bold;
 }
 
-main .logo_social{
+main .social-links{
     display: flex;
     justify-content: center;
     gap: 1rem; 
@@ -218,7 +218,7 @@ main .logo_social img:hover{
     cursor: pointer;
 }
 
-main .download {
+main .download-btn {
     gap: 0.5rem;
     display: flex;
     margin: 0 auto;
@@ -234,17 +234,17 @@ main .download {
     transition: transform 0.5s ease;
 }
 
-main .download:hover{
+main .download-btn:hover{
     transform: translateY(-0.3rem);
     font-weight: bold;
     text-shadow: 0 0 40px rgb(255, 255, 255);
 }
 
-.my_social{
+.social-heading{
     font-size: large;
 }
 
-.about {
+.about-heading {
     margin-top: 10rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -253,11 +253,11 @@ main .download:hover{
 }
 
 
-.about_me {
+.about-section {
     display: flex;
 }
 
-.description{
+.about-description{
     padding: 1rem;
     border-radius: 2rem;
     border: none;
@@ -268,21 +268,20 @@ main .download:hover{
     text-align: left;
 }
 
-.head_skills_and_technologies{
+.skills-heading{
     text-align: left;
-    color: white;
     font-weight: bold;
 }
 
-.skills_and_technologies{
+.skills-list{
     display: flex;
     flex-wrap:wrap;
     gap: 0.5rem;
 }
 
-.skills_and_technologies .Skills,
-.Tools,
-.Design{
+.skills-list .skill-badge,
+.tool-badge,
+.design-badge{
     border: 1px solid black;
     border-radius: 1rem;
     padding: 0.3rem 0.8rem;
@@ -292,15 +291,15 @@ main .download:hover{
     cursor: pointer;
 }
 
-.skills_and_technologies 
-.Skills:hover,
-.Tools:hover,
-.Design:hover{
+.skills-list 
+.skill-badge:hover,
+.tool-badge:hover,
+.design-badge:hover{
     transform: scale(1.05);
     font-weight: bold;
 }
 
-.about_js {
+.about-code-snippet {
     margin: 40px auto;
     text-align: left;
     width: fit-content;
@@ -311,40 +310,40 @@ main .download:hover{
     background-color: #cdcdcd;
 }
 
-.container_services{
+.services-section{
     display: inline-block;
     margin-top: 15rem;
 }
 
-.container_services .service{
+.services-section .services-title{
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.container_services_2{
+.services-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 1rem;
 }
 
-.Icon_Front_end,
-.Icon_Responsive_Design,
-.Icon_Performance_Optimization{
+.service-icon-frontend,
+.service-icon-responsive,
+.service-icon-performance{
     width: 3rem;
     padding: 0;
     margin: 0;
 }
 
-.container_Front-end-Development p,
-.container_Responsive_Design p,
-.container_Performance_Optimization p{
+.service-card-frontend p,
+.service-card-responsive p,
+.service-card-performance p{
     margin: 0.5rem auto;
 }
 
-.container_Front-end-Development,
-.container_Responsive_Design,
-.container_Performance_Optimization{
+.service-card-frontend,
+.service-card-responsive,
+.service-card-performance{
     border-radius: 2.5rem;
     box-shadow: 0 0 0.5rem black;
     width: fit-content;
@@ -353,30 +352,30 @@ main .download:hover{
 }
 
 
-.header_contact{
+.contact-title{
     margin: 10rem auto 2rem auto;
 
 }
 
-.container_Contact{
+.contact-layout{
     width: auto 50%;
     display: flex;
     padding: 0 1.5rem;
 }
 
-.description_contact{
+.contact-heading{
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 
-.container_Desc{
+.contact-content{
     width: 50%;
     padding: 0.5rem;
     text-align: left;
 }
 
-.container_input{
+.contact-form{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -385,9 +384,9 @@ main .download:hover{
     outline: none;
 }
 
-.container_input .name,
-.container_input .email,
-.container_input .subject{
+.contact-form .input-name,
+.contact-form .input-email,
+.contact-form .input-subject{
     font-weight: bold;
     padding: 1rem;
     margin: 0.5rem;
@@ -397,26 +396,26 @@ main .download:hover{
     box-sizing: border-box;
     background-color: rgb(206, 206, 206);
 }
-.container_Desc .email,
-.container_Desc .number_phone {
+.contact-content .contact-icon-email,
+.contact-content .contact-icon-phone {
     width: 1rem;
 }
 
-.logo_social_desc{
+.contact-social-links{
     display: flex;
     gap: 1rem;
 }
 
-.logo_social_desc .Instagram,
-.logo_social_desc .LinkedIn,
-.logo_social_desc .Github,
-.logo_social_desc .Whatsapp{
+.contact-social-links .social-instagram,
+.contact-social-links .social-linkedin,
+.contact-social-links .social-github,
+.contact-social-links .social-whatsapp{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
 }
 
-.logo_social_desc .Instagram{
+.contact-social-links .social-instagram{
     background-image: url(/assets/Social_logo/instagram.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -424,7 +423,7 @@ main .download:hover{
     position: relative;
 }
 
-.logo_social_desc .LinkedIn{
+.contact-social-links .social-linkedin{
     background-image: url(/assets/Social_logo/linkedin.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -432,7 +431,7 @@ main .download:hover{
     position: relative;
 }
 
-.logo_social_desc .Github{
+.contact-social-links .social-github{
     background-image: url(/assets/Social_logo/Github.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -440,7 +439,7 @@ main .download:hover{
     position: relative;
 }
 
-.logo_social_desc .Whatsapp{
+.contact-social-links .social-whatsapp{
     background-image: url(/assets/Social_logo/Whatsapp.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -449,7 +448,7 @@ main .download:hover{
 }
 
 
-.container_input .message{
+.contact-form .input-message{
     padding: 1rem 0.5rem 10rem 1rem;
     margin: 0.5rem;
     border-radius: 0.5rem;
@@ -459,7 +458,7 @@ main .download:hover{
     font-weight: bold;
 }
 
-.container_input button{
+.contact-form button{
     padding: 0.8rem;
     border-radius: 0.5rem;
     margin: 0.5rem;
@@ -471,7 +470,7 @@ main .download:hover{
     cursor: pointer;
 }
 
-.container_footer{
+.footer-bar{
     margin-top: 2rem;
     padding: 1rem;
     text-align: center;
@@ -479,6 +478,6 @@ main .download:hover{
     background-color: rgb(165, 165, 165);
 }
 
-.container_footer img {
+.footer-bar img {
     width: 1rem;
 }
