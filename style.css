@@ -89,6 +89,11 @@ main h1{
     padding: 0;
 }
 
+#home{
+    scroll-margin-top: calc(12px + 12px);
+    padding-top: calc(12px + 12px);
+}
+
 .hero-typing-section{
     display: inline-block; /* make the cursor at the end len text */
 }
@@ -264,6 +269,11 @@ main .download-btn:hover{
     font-size: large;
 }
 
+#about{
+    scroll-margin-top: calc(125px + 12px);
+    padding-top: calc(12px + 24px);
+}
+
 .about-heading {
     margin-top: 10rem;
     font-size: 3rem;
@@ -330,6 +340,11 @@ main .download-btn:hover{
     background-color: #cdcdcd;
 }
 
+#services{
+    scroll-margin-top: calc(12px + 12px);
+    padding-top: calc(12px + 120px);
+}
+
 .services-section{
     display: inline-block;
     margin-top: 15rem;
@@ -371,6 +386,11 @@ main .download-btn:hover{
     padding: 0.5rem;
 }
 
+
+#contact{
+    scroll-margin-top: calc(54px + 12px);
+    padding-top: calc(12px + 15px);
+}
 
 .contact-title{
     margin: 10rem auto 2rem auto;
