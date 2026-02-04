@@ -523,6 +523,6 @@ main .download-btn:hover{
 }
 
 .nav-link.active {
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  color: #ffffff;
+    font-weight: bold;
 }
