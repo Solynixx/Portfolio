@@ -36,12 +36,12 @@ type();
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // make active scroll navbar link
-const navlist = document.querySelectorAll("main [.nav-list]");
+const sections = document.querySelectorAll("main [id]");
 const navlink = document.querySelectorAll(".nav-link");
 window.addEventListener("scroll", () => {
     let current = "";
     
-    navlist.forEach (section => {
+    sections.forEach (section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         
