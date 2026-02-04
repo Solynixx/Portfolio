@@ -270,7 +270,7 @@ main .download-btn:hover{
 }
 
 #about{
-    scroll-margin-top: calc(125px + 12px);
+    scroll-margin-top: calc(10px + 10px);
     padding-top: calc(12px + 24px);
 }
 
@@ -342,12 +342,12 @@ main .download-btn:hover{
 
 #services{
     scroll-margin-top: calc(12px + 12px);
-    padding-top: calc(12px + 120px);
+    padding-top: calc(12px + 12px);
 }
 
 .services-section{
     display: inline-block;
-    margin-top: 15rem;
+    margin-top: 6rem;
 }
 
 .services-section .services-title{
@@ -388,8 +388,8 @@ main .download-btn:hover{
 
 
 #contact{
-    scroll-margin-top: calc(54px + 12px);
-    padding-top: calc(12px + 15px);
+    scroll-margin-top: calc(50px + 50px);
+    padding-top: calc(-1px - 1px);
 }
 
 .contact-title{
