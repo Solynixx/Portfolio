@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -33,8 +37,8 @@ body{
     display: flex;
     gap: 3.5rem;
     width: 35rem;
-    /* border: 2px solid red; */
 }
+
 .nav-list a{
     text-decoration: none;
     color: #c3c3c3;
@@ -50,6 +54,7 @@ body{
 
 .nav-list a::before {
     content: "";
+    display: inline-block;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -523,6 +528,8 @@ main .download-btn:hover{
 }
 
 .nav-link.active {
-  color: #ffffff;
+    color: #ffffff;
     font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+    text-shadow: 0 0 40px rgb(255, 255, 255);
 }
