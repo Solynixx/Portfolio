@@ -54,7 +54,6 @@ body{
 
 .nav-list a::before {
     content: "";
-    display: inline-block;
     position: absolute;
     left: 0;
     bottom: 0;
