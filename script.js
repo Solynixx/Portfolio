@@ -35,8 +35,9 @@ type();
 // copy right year 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+
 // make active scroll navbar link
-const sections = document.querySelectorAll("main [id]");
+const sections = document.querySelectorAll("main section[id]");
 const navlink = document.querySelectorAll(".nav-link");
 window.addEventListener("scroll", () => {
     let current = "";
@@ -51,7 +52,7 @@ window.addEventListener("scroll", () => {
     })
 
     navlink.forEach (link => {
-        link.classList.toggle("active", link.href.includes(current) );
+        link.classList.toggle("active", link.getAttribute("href").includes(current));
         }
     );
 }); 
