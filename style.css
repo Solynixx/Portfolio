@@ -577,7 +577,6 @@ main .download-btn:hover{
   transform: translate3d(0, 0, 0) scale(1);
 }
 
-
 .delay-1 { transition-delay: 0.08s; }
 .delay-2 { transition-delay: 0.16s; }
 .delay-3 { transition-delay: 0.24s; }
@@ -602,3 +601,12 @@ main .download-btn:hover{
     transition: none !important;
   }
 }
+
+/* Mobile kecil */
+@media (max-width: 480px) { }
+
+/* Mobile umum */
+@media (max-width: 768px) { }
+
+/* Tablet */
+@media (max-width: 1024px) { }
