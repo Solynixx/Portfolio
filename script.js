@@ -12,7 +12,7 @@ let speed = 100;
 function type() {
     const current = texts[index];
 
-    if (!deleting) {
+    if (deleting === false) {
         charIndex++;
         document.getElementById("hero-typing").textContent = current.slice(0, charIndex);
 
