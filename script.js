@@ -17,7 +17,7 @@ function type() {
         document.getElementById("hero-typing").textContent = current.slice(0, charIndex);
 
         if (charIndex === current.length) {
-            setTimeout(() => deleting = true, 250);
+            setTimeout(() => deleting = true , 250);
         }
     } else {
         charIndex--;
@@ -25,7 +25,7 @@ function type() {
 
         if (charIndex === 0) {
             deleting = false;
-            index = (index + 1) % texts.length;
+            index = 0;
         }
     }
     setTimeout(type, speed);
