@@ -1,8 +1,15 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 body{
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     font-family: poppins;
@@ -493,7 +500,7 @@ main .download-btn:hover{
 
 
 .contact-form .input-message{
-    padding: 1rem 0.5rem 10rem 1rem;
+    padding: 1rem 0 6.5rem 1rem;
     margin: 0.5rem;
     border-radius: 0.5rem;
     border: 1px grey;
@@ -710,7 +717,6 @@ main .download-btn:hover{
   .contact-form .input-subject,
   .contact-form .input-message,
   .contact-form button {
-    width: 100%;
     margin: 0.5rem 0;
   }
 
