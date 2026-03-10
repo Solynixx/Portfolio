@@ -411,6 +411,7 @@ main .download-btn:hover{
     width: auto 50%;
     display: flex;
     padding: 0 1.5rem;
+    gap: 1rem;
 }
 
 .contact-heading{
@@ -432,6 +433,13 @@ main .download-btn:hover{
     justify-content: center;
     padding-top: 2.5rem;
     outline: none;
+}
+
+#form-status {
+  margin: 0.5rem 0 0;
+  font-weight: 600;
+  text-align: left;
+  min-height: 1.2rem;
 }
 
 .contact-form .input-name,

@@ -116,17 +116,18 @@ const developer = {
                     <a href="https://www.instagram.com/ec.bert/" class="social-instagram" target="_blank" rel="noopener noreferrer"></a>
                     <a href="https://www.linkedin.com/in/edbert-chandra-802727326/" class="social-linkedin" target="_blank" rel="noopener noreferrer"></a>
                     <a href="https://github.com/Solynixx" class="social-github" target="_blank" rel="noopener noreferrer"></a>
-                    <a href="https://wa.me/6282213999844" class="social-whatsapp" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://wa.me/6282213999844" class=    "social-whatsapp" target="_blank" rel="noopener noreferrer"></a>
                 </section>
             </section>
-            <section class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xxxxxxx" method="post">
                 <input type="text" id="name" class="input-name" placeholder="Full Name" autocomplete="new-name">
                 <input type="email" id="email" class="input-email" placeholder="Email Address" autocomplete="off">
                 <input type="text" id="subject" class="input-subject" placeholder="Enter Your Subject" autocomplete="off">
-                <input type="text" id="message" class="input-message" placeholder="Enter Your Message" autocomplete="off" >
-                <button>Submit</button>
-            </section>
-        </div>
+                <textarea type="text" id="message" class="input-message" placeholder="Enter Your Message" autocomplete="off"></textarea>
+                <button type="submit">Submit</button>
+                <p id="form-status" aria-live="polite"></p>
+            </form>
+        </div>  
     </section>
     </main>
     <footer>
