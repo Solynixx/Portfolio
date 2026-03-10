@@ -12,7 +12,7 @@ let speed = 100;
 function type() {
     const current = texts[index];
 
-    if (deleting === false) {
+    if (!deleting) {
         charIndex++;
         document.getElementById("hero-typing").textContent = current.slice(0, charIndex);
 
@@ -25,7 +25,7 @@ function type() {
 
         if (charIndex === 0) {
             deleting = false;
-            index = 0;
+            index = (index + 1) % texts.length;
         }
     }
     setTimeout(type, speed);
@@ -51,10 +51,9 @@ window.addEventListener("scroll", () => {
         }
     })
 
-    navlink.forEach (link => {
-        link.classList.toggle("active", link.getAttribute("href").includes(current));
-        }
-    );
+    navlink.forEach((link) => {
+    link.classList.toggle("active", link.getAttribute("href") === `#${current}`); // fix
+  });
 }); 
 
 
