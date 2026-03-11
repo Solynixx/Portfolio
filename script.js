@@ -73,3 +73,40 @@ const observer = new IntersectionObserver((entries, obs) => {
 });
 
 revealElements.forEach((el) => observer.observe(el));
+
+
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm && formStatus) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    formStatus.textContent = "Sending...";
+    formStatus.style.color = "#222";
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "post",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (response.ok) {
+        formStatus.textContent = "Thanks! Your message has been sent.";
+        formStatus.style.color = "green";
+        contactForm.reset();
+      } else {
+        formStatus.textContent = "Oops! Failed to send. Please try again.";
+        formStatus.style.color = "crimson";
+      }
+    } catch (error) {
+      formStatus.textContent = "Network error. Check your internet connection.";
+      formStatus.style.color = "crimson";
+    }
+  });
+}
