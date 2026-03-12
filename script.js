@@ -98,7 +98,7 @@ if (contactForm && formStatus) {
 
       if (response.ok) {
         formStatus.textContent = "Thanks! Your message has been sent.";
-        formStatus.style.color = "green";
+        formStatus.style.color = "white";
         contactForm.reset();
       } else {
         formStatus.textContent = "Oops! Failed to send. Please try again.";
