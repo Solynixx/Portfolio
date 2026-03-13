@@ -74,13 +74,46 @@ const observer = new IntersectionObserver((entries, obs) => {
 
 revealElements.forEach((el) => observer.observe(el));
 
-
+// Notification for contact form submission
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 
 if (contactForm && formStatus) {
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+
+    const name = contactForm.querySelector("#name")?.value.trim() || "";
+    const email = contactForm.querySelector("#email")?.value.trim() || "";
+    const subject = contactForm.querySelector("#subject")?.value.trim() || "";
+    const message = contactForm.querySelector("#message")?.value.trim() || "";
+
+    // validasi basic
+    if (name.length < 2) {
+      formStatus.textContent = "Name must be at least 2 characters.";
+      formStatus.style.color = "crimson";
+      return;
+    }
+
+    if (!email.includes("@") || email.length < 5) {
+      formStatus.textContent = "Please enter a valid email address.";
+      formStatus.style.color = "crimson";
+      return;
+    }
+
+    if (message.length < 10) {
+      formStatus.textContent = "Message must be at least 10 characters.";
+      formStatus.style.color = "crimson";
+      return;
+    }
+
+    // prevent spamming
+    const now = Date.now();
+    const pageLoadedAt = window.__pageLoadedAt || now;
+    if (now - pageLoadedAt < 3000) {
+      formStatus.textContent = "Please wait a few seconds before sending.";
+      formStatus.style.color = "crimson";
+      return;
+    }
 
     formStatus.textContent = "Sending...";
     formStatus.style.color = "#222";
@@ -89,16 +122,14 @@ if (contactForm && formStatus) {
 
     try {
       const response = await fetch(contactForm.action, {
-        method: "post",
+        method: "POST",
         body: formData,
-        headers: {
-          Accept: "application/json"
-        }
+        headers: { Accept: "application/json" }
       });
 
       if (response.ok) {
         formStatus.textContent = "Thanks! Your message has been sent.";
-        formStatus.style.color = "white";
+        formStatus.style.color = "green";
         contactForm.reset();
       } else {
         formStatus.textContent = "Oops! Failed to send. Please try again.";
@@ -110,3 +141,5 @@ if (contactForm && formStatus) {
     }
   });
 }
+
+window.__pageLoadedAt = Date.now();
