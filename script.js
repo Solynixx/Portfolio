@@ -143,3 +143,23 @@ if (contactForm && formStatus) {
 }
 
 window.__pageLoadedAt = Date.now();
+
+// Mobile nav toggle
+const navToggle = document.getElementById("nav-toggle");
+const navList = document.getElementById("primary-nav");
+
+// Accessibility: Ensure navToggle and navList exist before adding event listeners
+if (navToggle && navList) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navList.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  // Close mobile nav when a link is clicked
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      navList.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}

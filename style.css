@@ -30,6 +30,15 @@ body{
     z-index: 1;
 }
 
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
 .brand-title{
     margin: auto 6rem;
     font-weight: bold;
@@ -619,16 +628,43 @@ main .download-btn:hover{
 /* Mobile umum */
 @media (max-width: 768px) {
      /* NAVBAR */
-  .site-header {
-    flex-direction: column;
+    .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 0.8rem 1rem;
-    gap: 0.6rem;
-  }
+    }
 
   .brand-title {
     margin: 0;
     font-size: 1.2rem;
+  }
+
+  .nav-toggle {
+    display: block;
+    line-height: 1;
+  }
+
+  .nav-list{
+    display: none;              
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  }
+
+  .nav-list.open {
+    display: flex;
   }
 
   .nav-list {
