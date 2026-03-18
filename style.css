@@ -137,9 +137,9 @@ main .profile-photo{
     width: 15rem;
     margin: 30px auto;
     border-radius: 50%;
-    background-image: url('/assets/Profile/Profil.jpeg');
+    background-image: url('/assets/Profile/Profile.jpg');
     background-repeat: no-repeat;
-    background-position: 0 -3rem;
+    background-position: center;
     background-size: cover;
     transition: 1s ease;
     box-shadow: 0 0 2rem black;
@@ -692,7 +692,7 @@ main .download-btn:hover{
   main .profile-photo {
     width: 11rem;
     height: 11rem;
-    background-position: center top;
+    background-position: center;
   }
 
   main .download-btn {
@@ -802,7 +802,7 @@ main .download-btn:hover{
   main .profile-photo {
     width: 13rem;
     height: 13rem;
-    background-position: center top;
+    background-position: center;
   }
 
   /* ABOUT */
