@@ -84,7 +84,6 @@ if (contactForm && formStatus) {
 
     const name = contactForm.querySelector("#name")?.value.trim() || "";
     const email = contactForm.querySelector("#email")?.value.trim() || "";
-    const subject = contactForm.querySelector("#subject")?.value.trim() || "";
     const message = contactForm.querySelector("#message")?.value.trim() || "";
 
     // validasi basic
